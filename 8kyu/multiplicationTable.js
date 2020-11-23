@@ -8,8 +8,9 @@ Your goal is to return multiplication table for number that is always an integer
 function multiTable(number) {
     let result = "";
     for (let i = 1; i <= 10; i++) {
-        result += `${i} * ${number} = ${i * number}`
-        result += i < 10 ? "\n" : "";
+        result += `${i} * ${number} = ${i * number}`;
+        //Cuando lleguemos a la última iteración, no introduciremos salto de línea
+        result += i < 10 ? "\n" : ""; 
     }
 
     return result;
